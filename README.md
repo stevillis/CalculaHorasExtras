@@ -1,7 +1,6 @@
-# CalculaHorasExtras
-<h1>Calcula a quantidade de horas extras a partir de um texto com os dados das horas extras</h1>
+# Calcula a quantidade de horas extras a partir de um texto com os dados das horas extras
 
-<h2>Usage</h2>
+<h3>Usage</h3>
 <p>
 O cálculo é realizado a partir da leitura do texto informado na caixa de texto. Como exemplo, um formato
 de texto adequado seria:
