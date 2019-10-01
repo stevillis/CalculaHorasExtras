@@ -26,7 +26,10 @@ function calculaHoras() {
             divRes.style.opacity = 1;
 
             spanDias.innerText = String(arrayHoras.length);
-            spanHoras.innerText = `${Math.floor(horasTotais / 60)}:${horasTotais % 60}`;
+            
+            let minutosTotais = String(horasTotais % 60);
+			if (minutosTotais.length == 1) minutosTotais = '0' + minutosTotais
+			spanHoras.innerText = `${Math.floor(horasTotais / 60)}:${minutosTotais}`;
         }
     } else {
         divRes.style.opacity = 0;
