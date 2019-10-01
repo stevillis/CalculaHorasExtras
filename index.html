@@ -15,31 +15,31 @@
 
 <body>
 	<div class="container">
-		<h1>Calcula as Horas do Registro de Ponto</h1>
-
+		<h3>Calcula as Horas do Registro de Ponto</h3>
 		<form class="was-validated" onsubmit="event.preventDefault(); return calculaHoras();">
 			<div class="mb-3">
-				<label for="validationTextarea">Horas extras</label>
 				<textarea class="form-control is-invalid" id="validationTextarea"
 					placeholder="Cole o texto com as horas extras aqui" required></textarea>
 			</div>
 			<div class="mb-3 text-center">
 				<button class="btn btn-primary" id="btncalcular" type="submit">Calcular horas extras</button>
 			</div>
+
+			<div id="res" class="alert alert-success" role="alert">
+				<label>Total de dias:</label>
+				<span id="dias"></span>
+				<br>
+				<label>Total de horas:</label>
+				<span id="horas"></span>
+			</div>
+
+
+			<div class="alert alert-danger" role="alert" id="alerta">
+				Não foi encontrado nenhum registro de horas extras.
+			</div>
 		</form>
 
-		<div id="res">
-			<label>Total de dias:</label>
-			<span id="dias"></span>
-			<br>
-			<label>Total de horas:</label>
-			<span id="horas"></span>
-		</div>
 
-
-		<div class="alert alert-danger" role="alert" id="alerta">
-			Não foi encontrado nenhum registro de horas extras.
-		</div>
 	</div>
 
 	<script src="./script.js"></script>
