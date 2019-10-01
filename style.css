@@ -1,0 +1,11 @@
+form {
+    width: 400px;
+}
+
+#res {
+    opacity: 0;
+}
+
+#alerta {
+    opacity: 0;
+}
