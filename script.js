@@ -4,7 +4,7 @@ function calculaHoras() {
     const divAlerta = document.getElementById("alerta");
 
     const regex = /\d{2}:\d{2}/gm;
-    let arrayHoras = textAreaTexto.value.match(regex);
+    const arrayHoras = textAreaTexto.value.match(regex);
 
     if (arrayHoras) {
         if (arrayHoras.length > 0) {

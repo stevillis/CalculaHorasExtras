@@ -15,7 +15,7 @@
 
 <body>
 	<div class="container">
-		<h3>Calcula as Horas do Registro de Ponto</h3>
+		<h3 class="text-center">Calcula as Horas do Registro de Ponto</h3>
 		<form class="was-validated" onsubmit="event.preventDefault(); return calculaHoras();">
 			<div class="mb-3">
 				<textarea class="form-control is-invalid" id="validationTextarea"
@@ -33,13 +33,10 @@
 				<span id="horas"></span>
 			</div>
 
-
 			<div class="alert alert-danger" role="alert" id="alerta">
 				Não foi encontrado nenhum registro de horas extras.
 			</div>
 		</form>
-
-
 	</div>
 
 	<script src="./script.js"></script>
